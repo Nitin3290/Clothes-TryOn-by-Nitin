@@ -1,50 +1,61 @@
-# Cloths Virtual Try On
-[![Open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SwayamInSync/clothes-virtual-try-on/blob/main/setup_gradio.ipynb)
+# 👕 Clothes Virtual Try-On
 
-## Updates
-- **[19/02/2024] From now on this repo won't receive any future updates from my side (Spoiler: It's not gone for good 😉. Expect its return, stronger than ever.) (Community Contributions & Issues discussions are still welcome 🤗)**
-- [26/12/2023] Added the Gradio interface and removed all the external depenency
-- [19/12/2023] Fixed the `openpose` installation and missing model weights issue
-- [19/12/2023] Replaced the `remove.bg` dependecy with `rembg`
-- [26/04/2023] Fixed the GAN generation issue
+A personal project by **K S Nitin**
 
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=SwayamInSync/clothes-virtual-try-on&type=Date)](https://star-history.com/#SwayamInSync/clothes-virtual-try-on&Date)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nitin3290/Clothes-TryOn-by-Nitin/blob/main/setup_gradio.ipynb)
 
-## Table of contents
-- [Cloths Virtual Try On](#cloths-virtual-try-on)
-  - [Table of contents](#table-of-contents)
-  - [General info](#general-info)
-  - [Demo](#demo)
-  - [Block Diagram](#block-diagram)
-  - [Methodology](#methodology)
-  - [Usage](#usage)
-  - [Citation](#citation)
+---
 
-## General info
+## 📝 What’s This About?
 
-This project is a part of a crework community project. While buying clothes online, it is difficult for a customer to select a desirable outfit in the first attempt because they can’t try on clothes. This project aims to solve this problem.
+Shopping online? It's hard to tell how clothes will look on you. This tool helps you preview how a t-shirt or dress might fit—just upload a photo of yourself and your outfit, and get a virtual try-on in seconds.
 
-<img width="383" alt="general_info" src="https://user-images.githubusercontent.com/63489382/163923011-c2898812-2491-4ec2-beb7-dcaaaf680e4f.png">
+No fancy setup needed. It runs entirely in a notebook and uses pose detection, segmentation, and image processing to generate the output.
 
+---
 
-## Demo
+## 🎬 Demo
 
 https://user-images.githubusercontent.com/63489382/163922795-5dbb0f52-95e4-42c6-95d7-2d965abeba6d.mp4
 
+---
 
+## 🧩 How It Works
 
-## Block Diagram
+The workflow follows a three-stage pipeline:
+
+1. **Preprocessing**: Removes background and prepares your photo.
+2. **Pose & Segmentation**: Uses OpenPose to detect body points and U-2-Net for segmenting clothing.
+3. **Try-On Generation**: Combines everything with a GAN to generate your try-on look.
+
+---
+
+## 🔧 Block Diagrams
+
+**Overall Flow**
 ![block_diagram_whole](https://user-images.githubusercontent.com/63489382/163922947-c1677f79-ad6f-4550-affc-7d4e80f0d247.png)
 
-
-## Methodology
+**Detailed Architecture**
 ![block_diagram_detailed](https://user-images.githubusercontent.com/63489382/163922991-86d148c2-1a97-48a5-b4ec-d8c16819374a.png)
 
+---
 
-## Usage
-- Just Click on `open in colab` button on top of this README file
+## 🚀 Try It Yourself
 
+1. Click the **"Open in Colab"** badge above.
+2. Run the notebook `setup_gradio.ipynb`.
+3. Upload your image and the outfit.
+4. See the result—your virtual look, previewed.
 
-## Citation
-**Work in progress**
+---
+
+## 🙋‍♂️ Created By
+
+**K S Nitin**
+
+GitHub: [@Nitin3290](https://github.com/Nitin3290)
+
+---
+
+## 📄 Cite This Work
+
